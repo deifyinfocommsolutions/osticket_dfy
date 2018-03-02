@@ -1,2 +1,1 @@
-# osticket_dfy
-OsTicket solution integration
+# Deify Infocomm Solutions Custom Integration for Support
