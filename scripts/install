@@ -120,7 +120,7 @@ fi
 
 if [ $sql -eq 1 ]
 then
-	db_name=$(ynh_sanitize_dbid $appname)
+	db_name=$(ynh_sanitize_dbid $appname)db
 	db_user=$(ynh_sanitize_dbid $appname)dbuser
 	ynh_app_setting_set $app db_name $db_name
 	ynh_mysql_setup_db $db_user $db_name
@@ -130,6 +130,8 @@ then
 	echo "DB_HOST= localhost" | tee -a "$final_path/db_info.txt"
 fi
 
+cp ../sources/include/ost-config.php $final_path/include/ost-config.php
+chmod 0666 $final_path/include/ost-config.php
 cp ../sources/scp/login.php $final_path/scp/login.php
 rm -r $parent_dir/support.zip
 
