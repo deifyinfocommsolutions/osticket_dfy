@@ -46,11 +46,6 @@ fi
 path_url=$(ynh_normalize_url_path $path_url)
 
 
-ynh_print_info "Displaying Variable Data" >&2
-ynh_print_info $path_url >&2
-ynh_print_info $domain >&2
-ynh_print_info $app >&2
-
 # Check web path availability
 ynh_webpath_available $domain $path_url
 # Register (book) web path
@@ -134,7 +129,7 @@ then
 	echo "DB_HOST= localhost" | tee -a "$final_path/db_info.txt"
 fi
 
-
+cp ../sources/scp/login.php $final_path/scp/login.php
 rm -r $parent_dir/support.zip
 
 #=================================================
