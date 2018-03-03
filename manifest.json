@@ -6,7 +6,7 @@
 		"en": "Global Service Desk"
 	},
 	"version": "1.0~ynh1",
-	"url": "https://github.com/ramakirankumar/osticket_dfy",
+	"url": "https://github.com/deifyinfocommsolutions/osticket_dfy",
 	"license": "GPL-3.0",
 	"maintainer": {
 		"name": "Deify Infocomm Solutions",
